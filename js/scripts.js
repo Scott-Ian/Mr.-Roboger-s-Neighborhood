@@ -1,7 +1,5 @@
 // Business Logic
 
-const robogerPopulatedArray = [];
-
 // Populates an array with the numbers of 0 - input, as a string
 function populateResponseArray (number) {
   let arrayToBePopulated = [];
@@ -13,12 +11,10 @@ function populateResponseArray (number) {
 
 // A Recursive solution for populateResponseArray
 function recursivePopulateResponseArray (number, array) {
-  if (array.length-1 === number) {
-    return array;
-  } else {
+  if (array.length-1 != number) {
     array.push(array.length.toString());
     recursivePopulateResponseArray(number, array);
-  }
+  } 
 }
 
 // Replaces elements in an array if they contain 3, 2, or 1
@@ -38,12 +34,10 @@ function replaceElements (element) {
 }
 
 function robogerResponse (number) {
-  
-  const robogerPopulatedArray = [];
-  // const robogerPopulatedArray = populateResponseArray(number);
+  // const robogerPopulatedArray = populateResponseArray(number); Enable this line to use for loop array filling
+  const robogerPopulatedArray = []; // Disable this line and line below to not recursively fill the array
   recursivePopulateResponseArray(number, robogerPopulatedArray);
   
-
   const robogerResponseArray = robogerPopulatedArray.map (function(element) {
     return replaceElements(element);
   })
