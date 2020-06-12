@@ -50,8 +50,14 @@ $(document).ready (function () {
     event.preventDefault();
 
     const userInput = parseInt($("input#user-input").val());
+    const reverse = $("input[name='reverse']:checked").val();
 
-    const result = robogerResponse(userInput).join(", ");
+    let result;
+    if (reverse) {
+      result = robogerResponse(userInput).reverse().join(", ");
+    } else {
+      result = robogerResponse(userInput).join(", ");
+    }
 
     $("#results").text(result);
   });
