@@ -55,27 +55,27 @@ _The program returns a range of numbers from 0 to the users inputted number_
 _In the range of numbers returned, the program replaces the number with "Beep!" if "1" appears in any digit of the number_
 * Sample Input: 3
 * Sample Output: 0, "Beep!", 2, 3
-* Is Complete: _False_
+* Is Complete: _True_
 
 _In the range of numbers returned, the program replaces the number with "Boop!" if "2" appears in any digit of the number_
 * Sample Input: 3
 * Sample Output: 0, "Beep!", "Boop!", 3
-* Is Complete: _False_
+* Is Complete: _True_
 
 _In the range of numbers returned, the program replaces the number with "Won't you be my neighbor?" if "3" appears in any digit of the number_
 * Sample Input: 3
 * Sample Output: 0, "Beep!", "Boop!", "Won't you be my neighbor?"
-* Is Complete: _False_
+* Is Complete: _True_
 
 _For numbers containing "2" and "1", the number will be counted as only containing "2"_
 * Sample Input: 21
 * Sample Output: [range from 0-20].... "Boop!"
-* Is Complete: _False_
+* Is Complete: _True_
 
 _For numbers containing "3" and "2" or "3" and "1", the number will be counted as only containing "3"_
 * Sample Input: 32
 * Sample Output: [range from 0-31].... "Won't you be my neighbor?"
-* Is Complete: _False_
+* Is Complete: _True_
 
 _The form contains an option to return the output in reversed order (beginning with the largest number)_
 * Sample Input: 5
@@ -85,6 +85,7 @@ _The form contains an option to return the output in reversed order (beginning w
 _The form will also take in an optional field of the users name. For numbers that are divisible by "3", the users name will be added to the output_
 * Sample Input: 8 and "Ian"
 * Sample Output: 0, "Beep!", "Boop!", "Won't you be my neighbor Ian?", 4, 5, "Won't you be my neighbor Ian?", 7, 8,
+* Is Complete: _False_
 
 
 
