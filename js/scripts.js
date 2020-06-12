@@ -1,14 +1,28 @@
 // Business Logic
 
+const robogerPopulatedArray = [];
+
 // Populates an array with the numbers of 0 - input, as a string
 function populateResponseArray (number) {
   let arrayToBePopulated = [];
   for (let i = 0; i <= number; i++) {
     arrayToBePopulated.push(i.toString());
   }
-  return arrayToBePopulated
+  return arrayToBePopulated;
 }
 
+// A Recursive solution for populateREsponseArray
+function recursivePopulateResponseArray (number, array) {
+  if (array.length-1 === number) {
+    return array;
+  } else {
+    console.log(array.length);
+    array.push(array.length.toString());
+    recursivePopulateResponseArray(number, array);
+  }
+}
+
+// Replaces elements in an array if they contain 3, 2, or 1
 function replaceElements (element) {
   if (element.includes(3)) {
     return "Won't you be my neighbor?";
@@ -25,7 +39,10 @@ function replaceElements (element) {
 }
 
 function robogerResponse (number) {
-  const robogerPopulatedArray = populateResponseArray(number);
+  // const robogerPopulatedArray = populateResponseArray(number);
+  const robogerPopulatedArray1 = [];
+  //console.log(robogerPopulatedArray.length);
+  const robogerPopulatedArray = recursivePopulateResponseArray(number, robogerPopulatedArray1);
 
   const robogerResponseArray = robogerPopulatedArray.map (function(element) {
     return replaceElements(element);
