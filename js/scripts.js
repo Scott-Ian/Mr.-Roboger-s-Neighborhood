@@ -60,14 +60,17 @@ $(document).ready (function () {
     const userName = $("input#user-name").val();
     const reverse = $("input[name='reverse']:checked").val();
 
-    let result;
-    if (reverse === "1") {
-      result = robogerResponse(userInput, userName).reverse().join(", ");
+    if (userInput >250) {
+      alert("Please enter a number no larger than 250");
     } else {
-      result = robogerResponse(userInput, userName).join(", ");
+      let result;
+      if (reverse === "1") {
+        result = robogerResponse(userInput, userName).reverse().join(", ");
+      } else {
+        result = robogerResponse(userInput, userName).join(", ");
+      }
+      $("#results").text(result);
+      $("img").show();
     }
-
-    $("#results").text(result);
-    $("img").show();
   });
 });
