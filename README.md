@@ -48,9 +48,9 @@ _The form will not be submittable if the form is left blank_
 * Is Complete: _True_
 
 _The program returns a range of numbers from 0 to the users inputted number_
-* Sample Input: 5
+* Sample Input: 7
 * Sample Output: 0, 1, 2, 3, 4, 5, 6, 7
-* Is Complete: _False_
+* Is Complete: _True_
 
 _In the range of numbers returned, the program replaces the number with "Beep!" if "1" appears in any digit of the number_
 * Sample Input: 3
