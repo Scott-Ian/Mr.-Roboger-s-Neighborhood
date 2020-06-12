@@ -18,8 +18,11 @@ function recursivePopulateResponseArray (number, array) {
 }
 
 // Replaces elements in an array if they contain 3, 2, or 1
-function replaceElements (element) {
-  if (element.includes(3)) {
+function replaceElements (element, name) {
+  if (element >= 3 && element % 3 === 0) {
+    return `Won't you be my neighbor ${name}?`;
+
+  }else if (element.includes(3)) {
     return "Won't you be my neighbor?";
 
   } else if (element.includes(2)) {
@@ -33,13 +36,17 @@ function replaceElements (element) {
   }
 }
 
-function robogerResponse (number) {
-  // const robogerPopulatedArray = populateResponseArray(number); Enable this line to use for loop array filling
-  const robogerPopulatedArray = []; // Disable this line and line below to not recursively fill the array
+function robogerResponse (number, name) {
+  
+  // Enable the line below to use for loop array filling
+  // const robogerPopulatedArray = populateResponseArray(number); 
+  
+  // Disable the two lines below to not recursively fill the array
+  const robogerPopulatedArray = []; 
   recursivePopulateResponseArray(number, robogerPopulatedArray);
   
   const robogerResponseArray = robogerPopulatedArray.map (function(element) {
-    return replaceElements(element);
+    return replaceElements(element, name);
   })
   return robogerResponseArray;
 }
@@ -50,13 +57,14 @@ $(document).ready (function () {
     event.preventDefault();
 
     const userInput = parseInt($("input#user-input").val());
+    const userName = $("input#user-name").val();
     const reverse = $("input[name='reverse']:checked").val();
 
     let result;
     if (reverse) {
-      result = robogerResponse(userInput).reverse().join(", ");
+      result = robogerResponse(userInput, userName).reverse().join(", ");
     } else {
-      result = robogerResponse(userInput).join(", ");
+      result = robogerResponse(userInput, userName).join(", ");
     }
 
     $("#results").text(result);

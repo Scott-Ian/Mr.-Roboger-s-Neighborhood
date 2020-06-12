@@ -80,12 +80,12 @@ _For numbers containing "3" and "2" or "3" and "1", the number will be counted a
 _The form contains an option to return the output in reversed order (beginning with the largest number)_
 * Sample Input: 5
 * Sample Output: 5, 4, "Won't you be my neighbor?" "Boop!", "Beep!", 0
-* Is Complete: _False_
+* Is Complete: _True_
 
-_The form will also take in an optional field of the users name. For numbers that are divisible by "3", the users name will be added to the output_
+_The form will also take in the users name. For numbers that are divisible by "3", including "3",  the users name will be added to the output_
 * Sample Input: 8 and "Ian"
 * Sample Output: 0, "Beep!", "Boop!", "Won't you be my neighbor Ian?", 4, 5, "Won't you be my neighbor Ian?", 7, 8,
-* Is Complete: _False_
+* Is Complete: _True_
 
 
 
