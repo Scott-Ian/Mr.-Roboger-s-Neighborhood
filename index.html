@@ -17,25 +17,26 @@
       <p>Please enter a number into the form below</p>
     </div> 
 
-    <form id="welcome">
-      <div class="form-group">
-        <label for="user-input">Number please!</label> 
-        <br>
-        <input id="user-input" type ="number" required>
-      </div>
-
-      <div class="form-group">
-        <label for="user-name">Name:</label> 
-        <br>
-        <input id="user-name" type ="text" required>
-      </div>
-
+    <div class="well">
+      <form id="welcome">
+        <div class="form-group">
+          <label for="user-input">Number please!</label> 
+          <br>
+          <input id="user-input" type ="number" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="user-name">Name:</label> 
+          <br>
+          <input id="user-name" type ="text" required>
+        </div>
+        
         <div class="form-group">
           <div class="radio">
-          <label>
-            <input type="radio" name="reverse" value = "0">
-            Regular
-          </label>
+            <label>
+              <input type="radio" name="reverse" value = "0">
+              Regular
+            </label>
           </div>
           <div class="radio">
             <label>
@@ -47,7 +48,8 @@
         <br>
         
         <button class="submit btn btn-primary">SUBMIT</button>
-    </form>
+      </form>
+    </div>
     <br>
     <div id="results"></div>
 
