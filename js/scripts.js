@@ -11,12 +11,11 @@ function populateResponseArray (number) {
   return arrayToBePopulated;
 }
 
-// A Recursive solution for populateREsponseArray
+// A Recursive solution for populateResponseArray
 function recursivePopulateResponseArray (number, array) {
   if (array.length-1 === number) {
     return array;
   } else {
-    console.log(array.length);
     array.push(array.length.toString());
     recursivePopulateResponseArray(number, array);
   }
@@ -39,10 +38,11 @@ function replaceElements (element) {
 }
 
 function robogerResponse (number) {
+  
+  const robogerPopulatedArray = [];
   // const robogerPopulatedArray = populateResponseArray(number);
-  const robogerPopulatedArray1 = [];
-  //console.log(robogerPopulatedArray.length);
-  const robogerPopulatedArray = recursivePopulateResponseArray(number, robogerPopulatedArray1);
+  recursivePopulateResponseArray(number, robogerPopulatedArray);
+  
 
   const robogerResponseArray = robogerPopulatedArray.map (function(element) {
     return replaceElements(element);
