@@ -30,6 +30,50 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## Specifications
+
+_The program returns the number 0, and only the number 0, if the user inputs 0_
+* Sample Input: 0
+* Sample Output: 0
+* Is Complete: _False_
+
+_The form will not accept non-number inputs_
+* Sample Input: N/A
+* Sample Output: N/A
+* Is Complete: _False_
+
+_The form will not be submittable if the form is left blank_
+* Sample Input: N/A
+* Sample Output: N/A
+* Is Complete: _False_
+
+_The program returns a range of numbers from 0 to the users inputted number_
+* Sample Input: 5
+* Sample Output: 0, 1, 2, 3, 4, 5, 6, 7
+* Is Complete: _False_
+
+_In the range of numbers returned, the program replaces the number with "Beep!" if "1" appears in any digit of the number_
+* Sample Input: 3
+* Sample Output: 0, Beep!, 2, 3
+* Is Complete: _False_
+
+_In the range of numbers returned, the program replaces the number with "Boop!" if "2" appears in any digit of the number_
+* Sample Input: 3
+* Sample Output: 0, Beep!, Boop!, 3
+* Is Complete: _False_
+
+_In the range of numbers returned, the program replaces the number with "Won't you be my neighbor?" if "3" appears in any digit of the number_
+* Sample Input: 3
+* Sample Output: 0, Beep!, Boop!, Won't you be my neighbor?
+* Is Complete: _False_
+
+_In the range of numbers returned, the program replaces the number with "Boop!" if "2" appears in any digit of the number_
+* Sample Input: 3
+* Sample Output: 0, Beep!, Boop!, 3
+* Is Complete: _False_
+
+
+
 ### License
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
