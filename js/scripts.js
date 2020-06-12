@@ -61,7 +61,7 @@ $(document).ready (function () {
     const reverse = $("input[name='reverse']:checked").val();
 
     let result;
-    if (reverse) {
+    if (reverse === "1") {
       result = robogerResponse(userInput, userName).reverse().join(", ");
     } else {
       result = robogerResponse(userInput, userName).join(", ");
