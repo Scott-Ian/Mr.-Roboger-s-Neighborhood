@@ -35,17 +35,17 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 _The program returns the number 0, and only the number 0, if the user inputs 0_
 * Sample Input: 0
 * Sample Output: 0
-* Is Complete: _False_
+* Is Complete: _True_
 
 _The form will not accept non-number inputs_
 * Sample Input: N/A
 * Sample Output: N/A
-* Is Complete: _False_
+* Is Complete: _True_
 
 _The form will not be submittable if the form is left blank_
 * Sample Input: N/A
 * Sample Output: N/A
-* Is Complete: _False_
+* Is Complete: _True_
 
 _The program returns a range of numbers from 0 to the users inputted number_
 * Sample Input: 5
