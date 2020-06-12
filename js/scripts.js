@@ -68,5 +68,6 @@ $(document).ready (function () {
     }
 
     $("#results").text(result);
+    $("img").show();
   });
 });

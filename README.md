@@ -26,7 +26,7 @@ https://github.com/Scott-Ian/Mr.-Roboger-s-Neighborhood.git
 
 ## Notes
 
-_The "robogerResponse" function within scripts.js contains a line of commented out code. This code review was solved as intended using a loop. However, while keeping in the functioning loop code (function: populateResponseArray) I also rewrote that code with a recursive function (recursivePopulateResponseArray). The recursive code fulfills the same function, to populate an array with every number from 0 - user input, and saves a single line of code!_
+_The "robogerResponse" function within scripts.js contains a line of commented out code. This code review was solved as intended using a loop. However, while keeping in the functioning loop code (function: populateResponseArray) I also rewrote that code with a recursive function (recursivePopulateResponseArray). The recursive code fulfills the same purpose, to populate an array with every number from 0 - user input, and saves a single line of code!_
 
 ## Known Bugs
 
