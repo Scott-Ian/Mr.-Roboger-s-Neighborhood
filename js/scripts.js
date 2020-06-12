@@ -22,7 +22,7 @@ function replaceElements (element, name) {
   if (element >= 3 && element % 3 === 0) {
     return `Won't you be my neighbor ${name}?`;
 
-  }else if (element.includes(3)) {
+  } else if (element.includes(3)) {
     return "Won't you be my neighbor?";
 
   } else if (element.includes(2)) {
