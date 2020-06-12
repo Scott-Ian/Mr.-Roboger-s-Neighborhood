@@ -1,6 +1,16 @@
 .jumbotron {
   text-align: center;
+  background-color: lightblue;
 }
+
+.jumbotron h2 {
+  color: black;
+}
+
+.jumbotron p {
+  color: black;
+}
+
 
 #results {
   text-align: center;
@@ -9,4 +19,16 @@
 
 img {
   display: none;
+}
+
+body {
+  background-color:maroon;
+}
+
+.container {
+  color: cyan;
+}
+
+form input {
+  color: black;
 }
